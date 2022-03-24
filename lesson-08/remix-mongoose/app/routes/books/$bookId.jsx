@@ -11,9 +11,16 @@ export default function BookPage() {
   return (
     <div>
       <h1 className="text-2xl font-bold mb-4">{book.title}</h1>
-      <code>
-        <pre>{JSON.stringify(book, null, 2)}</pre>
-      </code>
+      <h1>
+        Author: {book.author}
+      </h1>
+      <h1>
+        Price: {book.price}USD
+      </h1>
+      <h1>
+      ID: {book._id}
+      </h1>
+      
     </div>
   );
 }
